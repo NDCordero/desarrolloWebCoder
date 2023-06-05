@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,46 +7,134 @@
     <title>La Inconclusa</title>
 
     <link rel="shortcut icon" href="../imagenes/FAVICON Tren.png" type="image/x-icon">
-
+    
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="../css/estilo.css">
-
+    
 </head>
-<body>
-    <header>
-        <h1><a href="../index.html">La Inconclusa</a></h1>
-        <nav>
-            <ul id="menu">
-                <li><a href="../paginas/formaciones.html" class="botonMenu">Formaciones Destacadas</a></li>
-                <li><a href="../paginas/multimedia.html" class="botonMenu">Material Multimedia</a></li>
-                <li><a href="../paginas/curiosidades.html" class="botonMenu">Curiosidades</a></li>
-                <li><a href="../paginas/contacto.html" class="botonMenu">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+
+
+    <body class="container-flex">
+        <header class="row col-12">
+            <nav class="navbar navbar-expand-lg col-12">
+                <div class="container-fluid">
+            
+                    <button class="navbar-toggler hamburguesa ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                  <h1 class="me-auto"><a href="../index.html">La Inconclusa</a>
+                  </h1>
+
+                  <div class="collapse navbar-collapse" id="menu">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class= "botonMenu" href="../paginas/formaciones.html">Formaciones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="botonMenu" href="../paginas/multimedia.html">Material Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="botonMenu" href="../paginas/curiosidades.html">
+                        Curiosidades
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="botonMenu" href="../paginas/contacto.html">
+                          Contacto
+                        </a>
+                    </li>
+                </div>
+            </nav>
+        </header>
 
     <main>
         <h2>Curiosidades</h2>
-        <!-- FALTA DEFINIR CON QUE DISEÑO WEB VOY A MOSTRAR LAS CURIOSIDADES -->
-        <ul>
-            <li>Globo aerostatico</li>
-            <li>Pareja</li>
-            <li>Autos</li>
-            <li>Bicicleta</li>
-            <li>Estación de trenes</li>
-            <li>Estación de servicios</li>
-            <li>Combi del jefe</li>
-
-        </ul>
+    
+      <div class="container carouselPadre">
+        <div id="carouselCuriosidades" class="carousel slide carousel-fade" data-bs-ride="true" data-bs-interval="5000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselCuriosidades" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselCuriosidades" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselCuriosidades" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselCuriosidades" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselCuriosidades" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselCuriosidades" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselCuriosidades" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/imagenes/cajaOriginal.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Caja Original</h5>
+                  <p>La caja donde se compró el primer tren, el 19/10/1961.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/imagenes/cajaTrenOriginal.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/imagenes/facturaCompra.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Factura de compra</h5>
+                </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/primeraMesa1970.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Primer maqueta</h5>
+                      <p>Así empezó, sobre una mesa. Foto de 1970.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/imagenes/mismaMesa.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                   </div>
+                  <div class="carousel-item">
+                    <img src="/imagenes/maquetaInicio.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Primeras Etapas</h5>
+                    </div>
+                  </div>
+                  
+                  <!--<div class="carousel-item">
+                    <img src="/imagenes/kombiJefe.mov" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div> -->
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCuriosidades" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCuriosidades" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
 
 
 
-    <footer>
+    <footer class="col-12 row gx-0">
         <div class="iconoRedes">
             <a href="https://www.instagram.com/nicocordero" target="_blank"><img src="/imagenes/Instagram.png" alt="Enlace Instagram"></a>
             <a href="https://www.facebook.com/nicolas.cordero.144" target="_blank"><img src="/imagenes/Facebook.png" alt="Enlace Facebook"></a>
-            <a href="index.html" class="inicio">Volver al Home</a>
+            <a href="../index.html" class="inicio">Volver al Home</a>
         </div>
     </footer>
+
+    <!-- SCRIPT BOOTSTRAP JS -->
+
+    <script src="/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
