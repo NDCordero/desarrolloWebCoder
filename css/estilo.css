@@ -28,7 +28,7 @@ header{
 
 /* -------------------------- Principal ----------------------------- */
 body{
-    background-image: url(/imagenes/trenfondo.png);
+    background-image: url(../imagenes/trenfondo.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
