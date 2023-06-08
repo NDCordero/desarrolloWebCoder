@@ -41,7 +41,7 @@ main{
 
 
 h1{
-    margin: 0rem 8rem;
+    margin: 0rem 16rem;
     display: inline;
 }
 
@@ -147,7 +147,7 @@ nav{
 .parrafo{  
     font-size: 2rem;
     color: whitesmoke;
-    margin-top: 2rem;
+    margin-top: 0rem;
     margin-left: 4rem;
 } 
 
@@ -245,7 +245,7 @@ label{
 /*---------------------- Index ---------------------*/
 
 
-.parrafo {
+.parrafoIndex {
   margin-top: 10rem;
 }
 
@@ -304,7 +304,6 @@ p {
   
   .textoReinhold { 
     grid-area: textoReinhold; 
-    justify-self: center;
   }
   
   .ice {  
@@ -327,7 +326,7 @@ p {
   
   .textoICE { 
     grid-area: textoICE; 
-    justify-self: center;
+
   }
   
   .imagenICE { 
@@ -365,7 +364,6 @@ p {
   
   .textoZeppelin { 
     grid-area: textoZeppelin; 
-    justify-self: left;
   }
   
   .formacionesPadre p {  
@@ -583,15 +581,66 @@ p {
   .parrafo{
     margin-right: 6rem;
 } 
+.formacionesPadre {  
+  grid-template-rows: 0.05fr repeat(3, 1fr);
+  grid-template-columns: 2fr;
+  grid-template-areas:
+  "tituloFormaciones"
+  "Reinhold"
+  "ICE"
+  "Zeppelin";
+}
+
+.reinhold {  
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas:
+    "tituloReinhold tituloReinhold"
+    "imagenReinhold textoReinhold";
+  grid-area: Reinhold;
+  }
+
+  .ice {  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas:
+      "tituloICE tituloICE"
+      "textoICE imagenICE";
+    grid-area: ICE;
+  }
+
+  .zeppelin {  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas:
+      "tituloZeppelin tituloZeppelin"
+      "imagenZeppelin textoZeppelin";
+    grid-area: Zeppelin;
+  }
+
+  .formacionesPadre p {  
+    margin-top: 0rem;
+    }
+
+  .formacionesPadre img{
+    margin-top: 0rem;
+    }
+
 
 }
 
 
 @media screen and (max-width: 465px){
+  
+  h1{
+    margin: 0rem 6rem;
+    display: inline;
+}
+  
   h1 a {
     display: inline;
     justify-content:center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 0px 5px;
   }
 
@@ -664,12 +713,12 @@ h2{
 
   .tituloICE { 
     font-size: 1.8rem;
-    margin-top: 1rem; 
+    margin-top: 0rem; 
   }
 
   .tituloZeppelin { 
     font-size: 1.8rem;
-    margin-top: 1rem; 
+    margin-top: 0rem; 
   }
   
   .formacionesPadre p {  
