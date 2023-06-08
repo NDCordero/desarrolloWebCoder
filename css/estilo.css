@@ -209,6 +209,11 @@ footer{
 
 
 
+/* --------------------------- Curiosidades ----------------------------- */
+
+
+
+
 /* --------------------------- Contacto ----------------------------- */
 
 .formulario{
@@ -687,6 +692,12 @@ h2{
     }
     .textoZeppelin { 
       margin-top: 0rem;
+    }
+
+
+    .carouselPadre{
+      width: 100%;
+      margin-top: 4rem;
     }
 
 }
