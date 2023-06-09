@@ -1,97 +1,101 @@
 
 /* -------------------------- Estilos  ----------------------------- */
+
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
 html{
-    font-size: 62.5%;
-    min-height: 100%;
-    position: relative;
+  font-size: 62.5%;
+  min-height: 100%;
+  position: relative;
 }
 
 
 /* -------------------------- Header ----------------------------- */
+
 header{
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 0;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
   }
 
 
 
 /* -------------------------- Principal ----------------------------- */
+
 body{
-    background-image: url(../imagenes/trenfondo.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+  background-image: url(../imagenes/trenfondo.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: rgb(109, 109, 109);
 }
 
 main{
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 
 h1{
-    margin: 0rem 16rem;
-    display: inline;
+  margin: 0rem 16rem;
+  display: inline;
 }
 
 
 
 
 h1 a {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    color:#FEC89A;
-    font-size: 4rem;
-    display: inline;
-    background-color: #615958;
-    border-radius: 5px;
-    padding: 0px 10px;
-    box-shadow: 1px 1px 15px 1px rgb(3, 3, 3);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color:#FEC89A;
+  font-size: 4rem;
+  display: inline;
+  background-color: #615958;
+  border-radius: 5px;
+  padding: 0px 10px;
+  box-shadow: 1px 1px 15px 1px rgb(3, 3, 3);
 }
 
 
 a {
-    text-decoration: none;
-    color: black;  
+  text-decoration: none;
+  color: black;  
 }
 
 
 h2 {
-    color: whitesmoke;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 3rem;
-    font-weight: 500;
-    margin-top: 10rem;
-    padding-left: 5rem;
-    padding-bottom: 0.4rem;
-    background-color: #aa796f;
-    border: 2px solid #000;
-    border-radius: 2px;
+  color: whitesmoke;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 10rem;
+  padding-left: 5rem;
+  padding-bottom: 0.4rem;
+  background-color: #aa796f;
+  border: 2px solid #000;
+  border-radius: 2px;
 }
 
 
 h3{
-    color: #EDDCD2;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.2rem;
+  color: #EDDCD2;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2rem;
 }
 
 
 h4{
-    color: #d9dba9;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2rem;
+  color: #d9dba9;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
 }
 
 p {  
@@ -107,7 +111,7 @@ p {
 /* --------------------------- Menu ----------------------------- */
 
 nav{
-    display: inline;
+  display: inline;
 }
 
 #menu {
@@ -115,28 +119,27 @@ nav{
 }
 
 #menu li {
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: inline;
-    padding: 0rem 1rem;
-    margin-left: 1.5rem;
-    
+  list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: inline;
+  padding: 0rem 1rem;
+  margin-left: 1.5rem;  
 }
 
 
 .botonMenu {
-    font-size:large;
-    font-weight: 600;
-    background-color: #f0f3bd;
-    padding: 0.3rem 1.5rem;
-    border-radius: 0.5rem;
-    display: inline;
-    box-shadow: 0.5px 0.5px 10px 0.2px rgb(3, 3, 3); 
+  font-size:large;
+  font-weight: 600;
+  background-color: #f0f3bd;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.5rem;
+  display: inline;
+  box-shadow: 0.5px 0.5px 10px 0.2px rgb(3, 3, 3); 
 }
 
 
 .botonMenu:hover {
-    background-color: #dee0ae;
+  background-color: #dee0ae;
 }
 
 .hamburguesa{
@@ -150,11 +153,11 @@ nav{
 
 
 .parrafo{  
-    font-size: 2rem;
-    color: whitesmoke;
-    margin-top: 0rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+  font-size: 2rem;
+  color: whitesmoke;
+  margin-top: 0rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 } 
 
 .nav-item {
@@ -165,21 +168,18 @@ nav{
 
 /* --------------------------- Footer ----------------------------- */
 
-
-
 footer{
-    height: 3rem;
-    background-color: #F0F3BD;
-    box-shadow: 0.5px 0.5px 10px 0.2px rgb(3, 3, 3);
-    position: absolute;
-    bottom: 0;
+  height: 3rem;
+  background-color: #F0F3BD;
+  box-shadow: 0.5px 0.5px 10px 0.2px rgb(3, 3, 3);
+  position: absolute;
+  bottom: 0;
 }
 
 .iconoRedes img{
-    width: 2.5rem;
-    margin-top: 0.5rem;
-    margin-right: 1.2rem;
-
+  width: 2.5rem;
+  margin-top: 0.5rem;
+  margin-right: 1.2rem;
 }
 
 
@@ -205,13 +205,13 @@ footer{
 }
 
 label{
-    font-size: 1.5rem;
-    color: #d1d1d1;
+  font-size: 1.5rem;
+  color: #d1d1d1;
 }
 
 .formulario{
-    margin-top: 6rem;
-    margin-left: 5rem;
+  margin-top: 6rem;
+  margin-left: 5rem;
 }
 
 .form-control{
@@ -228,7 +228,6 @@ label{
 
 /*---------------------- Index ---------------------*/
 
-
 .parrafoIndex {
   margin-top: 10rem;
 }
@@ -237,13 +236,13 @@ label{
 /*------------------- Formaciones Destacadas ------------------*/
 
 .formacionesPadre {  
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "tituloFormaciones tituloFormaciones"
-      "Reinhold Reinhold"
-      "ICE ICE"
-      "Zeppelin Zeppelin";
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "tituloFormaciones tituloFormaciones"
+    "Reinhold Reinhold"
+    "ICE ICE"
+    "Zeppelin Zeppelin";
   }
   
   .tituloFormaciones { 
@@ -351,7 +350,7 @@ label{
 
 /*------------------- Multimedia ------------------*/
 
-.multimediaPadre {  
+  .multimediaPadre {  
     display: grid;
     grid-template-areas:
       "tituloMultimedia tituloMultimedia"
@@ -418,8 +417,8 @@ label{
  .Video {
     display: grid; 
     grid-template-areas:
-    "tituloVideo"
-    "enlace";
+      "tituloVideo"
+      "enlace";
     grid-area: Video; 
     justify-self: center; 
     margin-right: 4rem;
@@ -437,33 +436,6 @@ label{
   }
 
 
-  @media screen and (max-width: 768px) {
-  
-    .multimediaPadre {  
-      display: grid;
-      grid-auto-flow: row;
-      grid-template-areas:
-        "tituloMultimedia"
-        "Fotos"
-        "Video";
-      }
-  
-    .Fotos {
-      width: 90%;
-      height: 80%;
-      margin: 0;
-      justify-self: center;
-      }
-  
-    .Fotos img{
-      object-fit: cover;
-      border: 2px solid #000;
-      }
-  
-    .video1 {
-      width: auto;
-      }
-  }
 
   /*------------------------------- Curiosidades ----------------------------------------*/
 
@@ -525,19 +497,19 @@ label{
   margin-left: 1rem;
   } 
 
-.formacionesPadre {  
-  grid-template-areas:
-  "tituloFormaciones"
-  "Reinhold"
-  "ICE"
-  "Zeppelin";
-}
+  .formacionesPadre {  
+    grid-template-areas:
+      "tituloFormaciones"
+      "Reinhold"
+      "ICE"
+      "Zeppelin";
+  }
 
-.reinhold {  
-   grid-template-areas:
-    "tituloReinhold tituloReinhold"
-    "imagenReinhold textoReinhold";
-  grid-area: Reinhold;
+  .reinhold {  
+    grid-template-areas:
+      "tituloReinhold tituloReinhold"
+      "imagenReinhold textoReinhold";
+    grid-area: Reinhold;
   }
 
   .ice {  
@@ -548,7 +520,7 @@ label{
   }
 
   .zeppelin {  
-      grid-template-areas:
+    grid-template-areas:
       "tituloZeppelin tituloZeppelin"
       "imagenZeppelin textoZeppelin";
     grid-area: Zeppelin;
@@ -560,6 +532,18 @@ label{
     margin-top: 8rem;
   }
 
+  .multimediaPadre {  
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tituloMultimedia"
+      "Fotos"
+      "Video";
+    }
+
+  .Video{ 
+    margin: 0rem;
+    }
 
 }
 
@@ -588,34 +572,34 @@ label{
   .parrafo{
     margin-right: 4rem;
     margin-left: 0rem;
-} 
+  } 
 
   p{
-  font-size: 2rem;
-  margin-left: 4rem;
+    font-size: 2rem;
+    margin-left: 4rem;
   }
  
   h2{
-  font-size: 2.2rem;
-  max-width: 100%;
-  margin-top: 6rem;
+    font-size: 2.2rem;
+    max-width: 100%;
+    margin-top: 6rem;
   }
 
- .formacionesPadre {  
-  display: grid;
-  grid-template-areas:
-    "tituloFormaciones"
-    "Reinhold"
-    "ICE"
-    "Zeppelin";
+  .formacionesPadre {  
+    display: grid;
+    grid-template-areas:
+      "tituloFormaciones"
+      "Reinhold"
+      "ICE"
+      "Zeppelin";
 }
 
   .reinhold {  
-  grid-template-areas:
-    "tituloReinhold"
-    "imagenReinhold"
-    "textoReinhold";
-  grid-area: Reinhold;
+    grid-template-areas:
+      "tituloReinhold"
+      "imagenReinhold"
+      "textoReinhold";
+    grid-area: Reinhold;
   }
 
   .ice {  
@@ -667,7 +651,19 @@ label{
   }
 
   .Video{ 
-    margin-right: 0rem;
+    margin: 0rem;
   }
 
+  .multimediaPadre {  
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tituloMultimedia"
+      "Fotos"
+      "Video";
+  }
+
+  .video1 {
+    width: auto;
+    }
 }
