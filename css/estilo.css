@@ -94,6 +94,14 @@ h4{
     font-size: 2rem;
 }
 
+p {  
+  font-size: 2rem;
+  color: whitesmoke;
+  margin-top: 2rem;
+  margin-left: 6rem;
+  text-align: justify;
+}
+
 
 
 /* --------------------------- Menu ----------------------------- */
@@ -145,19 +153,13 @@ nav{
     font-size: 2rem;
     color: whitesmoke;
     margin-top: 0rem;
-    margin-left: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 } 
-
 
 .nav-item {
   margin: 0.3rem 0rem;
   padding: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-
-
-
 }
 
 
@@ -231,12 +233,6 @@ label{
   margin-top: 10rem;
 }
 
-p {  
-  font-size: 2rem;
-  color: whitesmoke;
-  margin-top: 2rem;
-  margin-left: 6rem;
-}
 
 /*------------------- Formaciones Destacadas ------------------*/
 
@@ -261,8 +257,6 @@ p {
       "tituloReinhold tituloReinhold"
       "imagenReinhold textoReinhold";
     grid-area: Reinhold;
-    
-   
   }
   
   .tituloReinhold { 
@@ -455,21 +449,20 @@ p {
         "Video";
       }
   
-      .Fotos {
-          width: 90%;
-          height: 80%;
-          margin: 0;
-          justify-self: center;
+    .Fotos {
+      width: 90%;
+      height: 80%;
+      margin: 0;
+      justify-self: center;
       }
   
-      .Fotos img{
-        object-fit: cover;
-        border: 2px solid #000;
-        
+    .Fotos img{
+      object-fit: cover;
+      border: 2px solid #000;
       }
   
-      .video1 {
-        width: auto;
+    .video1 {
+      width: auto;
       }
   }
 
@@ -529,9 +522,10 @@ p {
   }
 
   .parrafo{
-    margin-right: 6rem;
-    
-} 
+  margin-right: 0rem;
+  margin-left: 1rem;
+  } 
+
 .formacionesPadre {  
   grid-template-areas:
   "tituloFormaciones"
@@ -593,12 +587,13 @@ p {
   }
 
   .parrafo{
-    margin-right: 6rem;
+    margin-right: 4rem;
+    margin-left: 0rem;
 } 
 
  p{
   font-size: 2rem;
-
+  margin-left: 4rem;
  }
  
 h2{
