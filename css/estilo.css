@@ -96,8 +96,6 @@ h4{
 
 
 
-
-
 /* --------------------------- Menu ----------------------------- */
 
 nav{
@@ -116,7 +114,6 @@ nav{
     margin-left: 1.5rem;
     
 }
-
 
 
 .botonMenu {
@@ -158,14 +155,10 @@ nav{
 }
 
 @media screen and (max-width: 768px) {
-  .botonMenu {
-    font-size: small;
-  }
+
 
 
 }
-
-
 
 
 /* --------------------------- Footer ----------------------------- */
@@ -173,8 +166,6 @@ nav{
 
 
 footer{
-    display: flex;
-    flex-direction: row;
     height: 3rem;
     background-color: #F0F3BD;
     box-shadow: 0.5px 0.5px 10px 0.2px rgb(3, 3, 3);
@@ -192,25 +183,16 @@ footer{
 
 .iconoRedes{
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: center;
   padding-left: 2rem;
-
 }
 
 .inicio{
-  display: flex;
-  flex-direction: row; 
-  align-items: center;
   font-size: 2rem;
   font-weight: 600;
   color: #aa796f;
 }
-
-
-
-/* --------------------------- Curiosidades ----------------------------- */
-
 
 
 
@@ -260,9 +242,6 @@ p {
 
 .formacionesPadre {  
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
     grid-auto-flow: row;
     grid-template-areas:
       "tituloFormaciones tituloFormaciones"
@@ -277,8 +256,6 @@ p {
   
   .reinhold {  
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
     grid-auto-flow: row;
     grid-template-areas:
       "tituloReinhold tituloReinhold"
@@ -308,8 +285,6 @@ p {
   
   .ice {  
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
     grid-auto-flow: row;
     grid-template-areas:
       "tituloICE tituloICE"
@@ -339,8 +314,6 @@ p {
   
   .zeppelin {  
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
     grid-auto-flow: row;
     grid-template-areas:
       "tituloZeppelin tituloZeppelin"
@@ -386,8 +359,6 @@ p {
 
 .multimediaPadre {  
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
     grid-auto-flow: row;
     grid-template-areas:
       "tituloMultimedia tituloMultimedia"
@@ -400,8 +371,6 @@ p {
   
   .Fotos {  
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr;
     grid-auto-flow: row;
     grid-template-areas:
       "tituloFotos tituloFotos tituloFotos tituloFotos"
@@ -456,8 +425,6 @@ p {
 
  .Video {
     display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-rows: 0.2fr 1fr; 
     grid-template-areas:
     "tituloVideo"
     "enlace";
@@ -481,8 +448,6 @@ p {
   
     .multimediaPadre {  
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.2fr 1fr 1fr;
       grid-auto-flow: row;
       grid-template-areas:
         "tituloMultimedia"
@@ -565,10 +530,9 @@ p {
 
   .parrafo{
     margin-right: 6rem;
+    
 } 
 .formacionesPadre {  
-  grid-template-rows: 0.05fr repeat(3, 1fr);
-  grid-template-columns: 2fr;
   grid-template-areas:
   "tituloFormaciones"
   "Reinhold"
@@ -577,17 +541,13 @@ p {
 }
 
 .reinhold {  
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2fr 1fr;
-  grid-template-areas:
+   grid-template-areas:
     "tituloReinhold tituloReinhold"
     "imagenReinhold textoReinhold";
   grid-area: Reinhold;
   }
 
   .ice {  
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
     grid-template-areas:
       "tituloICE tituloICE"
       "textoICE imagenICE";
@@ -595,21 +555,12 @@ p {
   }
 
   .zeppelin {  
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
-    grid-template-areas:
+      grid-template-areas:
       "tituloZeppelin tituloZeppelin"
       "imagenZeppelin textoZeppelin";
     grid-area: Zeppelin;
   }
 
-  .formacionesPadre p {  
-    margin-top: 0rem;
-    }
-
-  .formacionesPadre img{
-    margin-top: 0rem;
-    }
   
   .carousel-control-prev{
     height: 70%;
@@ -647,6 +598,7 @@ p {
 
  p{
   font-size: 2rem;
+
  }
  
 h2{
@@ -657,8 +609,6 @@ h2{
 
  .formacionesPadre {  
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.05fr repeat(3, 1fr);
   grid-template-areas:
     "tituloFormaciones"
     "Reinhold"
@@ -667,8 +617,6 @@ h2{
 }
 
 .reinhold {  
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr repeat(2, 1fr);
   grid-template-areas:
     "tituloReinhold"
     "imagenReinhold"
@@ -677,8 +625,6 @@ h2{
   }
 
   .ice {  
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr repeat(2,  1fr);
     grid-template-areas:
       "tituloICE"
       "imagenICE"
@@ -687,8 +633,6 @@ h2{
   }
 
   .zeppelin {  
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr repeat(2,  1fr);
     grid-template-areas:
       "tituloZeppelin"
       "imagenZeppelin"
@@ -698,39 +642,19 @@ h2{
 
   .tituloReinhold { 
     font-size: 1.8rem;
-    margin-top: 3rem; 
   }
 
   .tituloICE { 
     font-size: 1.8rem;
-    margin-top: 0rem; 
   }
 
   .tituloZeppelin { 
     font-size: 1.8rem;
-    margin-top: 0rem; 
   }
   
   .formacionesPadre p {  
     font-size: 1.5rem;
-    margin-top: 0rem;
     margin-right: 6rem;
-    }
-
-  .formacionesPadre img{
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    }
-
-    .textoReinhold { 
-    margin-top: 0rem;
-    }
-
-   .textoICE { 
-      margin-top: 0rem;
-    }
-    .textoZeppelin { 
-      margin-top: 0rem;
     }
 
 
@@ -742,6 +666,10 @@ h2{
     .carousel-control-prev{
       height: 70%;
       margin-top: 8rem;
+    }
+
+    .botonMenu {
+      font-size: small;
     }
 
 }
