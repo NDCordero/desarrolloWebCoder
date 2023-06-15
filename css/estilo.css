@@ -1,6 +1,8 @@
 
+
 /* -------------------------- Estilos  ----------------------------- */
 
+/* 
 *{
   margin: 0;
   padding: 0;
@@ -11,12 +13,12 @@ html{
   font-size: 62.5%;
   min-height: 100%;
   position: relative;
-}
+} */
 
 
 /* -------------------------- Header ----------------------------- */
 
-header{
+/* header{
   margin-bottom: 2rem;
   display: flex;
   flex-direction: row; 
@@ -24,13 +26,13 @@ header{
   align-items: center;
   position: fixed;
   top: 0;
-  }
+  } */
 
 
 
 /* -------------------------- Principal ----------------------------- */
 
-body{
+/* body{
   background-image: url(../imagenes/trenfondo.png);
   background-size:cover;
   background-repeat: no-repeat;
@@ -105,12 +107,12 @@ p {
   margin-left: 6rem;
   text-align: justify;
 }
-
+ */
 
 
 /* --------------------------- Menu ----------------------------- */
 
-nav{
+/* nav{
   display: inline;
 }
 
@@ -135,10 +137,10 @@ nav{
   border-radius: 0.5rem;
   display: inline;
   box-shadow: 0.5px 0.5px 10px 0.2px rgb(3, 3, 3); 
-}
+}  */
 
 
-.botonMenu:hover {
+/* .botonMenu:hover {
   background-color: #dee0ae;
 }
 
@@ -168,7 +170,7 @@ nav{
 
 /* --------------------------- Footer ----------------------------- */
 
-footer{
+/* footer{
   height: 3rem;
   background-color: #F0F3BD;
   box-shadow: 0.5px 0.5px 10px 0.2px rgb(3, 3, 3);
@@ -194,13 +196,13 @@ footer{
   font-size: 2rem;
   font-weight: 600;
   color: #aa796f;
-}
+}  */
 
 
 
 /* --------------------------- Contacto ----------------------------- */
 
-.formulario{
+/* .formulario{
   margin-right: 5rem;
 }
 
@@ -221,21 +223,21 @@ label{
 
 .btn{
   font-size: 1.3rem;
-}
+} */
 
 
 /* ----------------************* GRIDS *************------------------------------ */
 
 /*---------------------- Index ---------------------*/
 
-.parrafoIndex {
+/* .parrafoIndex {
   margin-top: 10rem;
-}
+} */
 
 
 /*------------------- Formaciones Destacadas ------------------*/
 
-.formacionesPadre {  
+/* .formacionesPadre {  
   display: grid;
   grid-auto-flow: row;
   grid-template-areas:
@@ -344,13 +346,13 @@ label{
     width: 80%;
     height: auto;
     margin-top: 5rem;
-    }
+    } */
 
    
 
 /*------------------- Multimedia ------------------*/
 
-  .multimediaPadre {  
+  /* .multimediaPadre {  
     display: grid;
     grid-template-areas:
       "tituloMultimedia tituloMultimedia"
@@ -405,15 +407,15 @@ label{
 
     .foto7 { 
       grid-area: foto7; 
-      }
+      } */
   
-  .Fotos img{
+  /* .Fotos img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border: 2px solid #000; 
-  }
-
+  } */
+/* 
  .Video {
     display: grid; 
     grid-template-areas:
@@ -433,20 +435,20 @@ label{
     margin-bottom: 5rem;
     justify-self: center; 
     grid-area: tituloVideo; 
-  }
+  } */
 
 
 
   /*------------------------------- Curiosidades ----------------------------------------*/
 
-  .carouselPadre{
+  /* .carouselPadre{
     justify-content: center;
     align-items: center;
     width:max-content;
     margin-top: 2rem;
-  }
+  } */
 
-  .carousel-caption h5{
+  /* .carousel-caption h5{
       font-size:medium;
   }
 
@@ -468,7 +470,7 @@ label{
     height: 60vh;
     width: 100%;
     
-  }
+  } */
 
 /* ----------------************* MEDIA QUERIES *************------------------------------ */
 
