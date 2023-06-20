@@ -139,8 +139,9 @@ nav {
 }
 
 .nav-item {
-  margin: 0.3rem 0rem;
+  margin: 0.4rem 0rem;
   padding: 1rem;
+  z-index: 2;
 }
 
 /* --------------------------- Footer ----------------------------- */
@@ -173,7 +174,7 @@ footer {
 /* --------------------------- Contacto ----------------------------- */
 .formulario {
   margin-right: 5rem;
-  margin-top: 6rem;
+  margin-top: 3rem;
   margin-left: 5rem;
 }
 
@@ -533,7 +534,7 @@ label {
     margin-top: 8rem;
   }
   .botonMenu {
-    font-size: small;
+    font-size: large;
   }
   .Video {
     margin: 0rem;

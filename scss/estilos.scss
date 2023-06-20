@@ -154,8 +154,9 @@ nav{
 } 
 
 .nav-item {
-  margin: 0.3rem 0rem;
+  margin: 0.4rem 0rem;
   padding: 1rem;
+  z-index: 2;
 }
 
 
@@ -191,7 +192,7 @@ footer{
 
 .formulario{
   margin-right: 5rem;
-  margin-top: 6rem;
+  margin-top: 3rem;
   margin-left: 5rem;
 }
 
@@ -645,7 +646,7 @@ label{
     }
   
     .botonMenu {
-      font-size: small;
+      font-size: large;
     }
   
     .Video{ 
