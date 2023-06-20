@@ -144,6 +144,10 @@ nav {
   z-index: 2;
 }
 
+.navbar-nav {
+  z-index: 2;
+}
+
 /* --------------------------- Footer ----------------------------- */
 footer {
   height: 3rem;
