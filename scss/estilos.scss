@@ -1,5 +1,6 @@
 
 
+
 /* -------------------------- Estilos  ----------------------------- */
 
 *{
@@ -14,17 +15,22 @@ html{
   position: relative;
 }
 
+/* ----------------************* MIXINS *************------------------------------ */
+
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+}
 
 /* -------------------------- Header ----------------------------- */
 
 header{
-  margin-bottom: 2rem;
-  display: flex;
   flex-direction: row; 
   justify-content: space-around;
-  align-items: center;
   position: fixed;
   top: 0;
+  margin-bottom: 2rem;
+  @include flex-center;
   }
 
 
@@ -66,8 +72,7 @@ a {
 
 
 h2 {
-  color: whitesmoke;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  @extend %titulos;
   font-size: 3rem;
   font-weight: 500;
   margin-top: 10rem;
@@ -80,10 +85,10 @@ h2 {
 
 
 h3{
-  color: #EDDCD2;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  @extend %titulos;
   font-size: 2.2rem;
 }
+
 
 
 h4{
@@ -176,10 +181,9 @@ footer{
 }
 
 .iconoRedes{
-  display: flex;
   flex-direction: row;
-  align-items: center;
   padding-left: 2rem;
+  @include flex-center;
   img{
       width: 2.5rem;
       margin-top: 0.5rem;
@@ -459,42 +463,44 @@ label{
 
     /* ----------------************* MEDIA QUERIES *************------------------------------ */
 
-    @media screen and (min-width: 768px) and (max-width: 1024px)  {
+  @media screen and (min-width: 768px) and (max-width: 1024px)  {
       
-      .botonMenu {
-        font-size:medium;
-        padding: 0.3rem 1rem;
-        border-radius: 0.5rem;
+  .botonMenu {
+    font-size:medium;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+  }
+      
+  #menu {
+    margin-left: 0rem;
+    li {
+        padding: 0rem 0.5rem;
+        margin-left: 1rem;  
       }
-      
-      #menu {
-        margin-left: 0rem;
-        li {
-            padding: 0rem 0.5rem;
-            margin-left: 1rem;  
-          }
-        }
+    }
     
-      h1{
-        margin: 0rem 2rem;
-        display: inline;
-        a {
-            font-size: 2.5rem;
-          }
-      }  
+  h1{
+    margin: 0rem 2rem;
+    display: inline;
+    a {
+        font-size: 2.5rem;
+      }
+  }  
 
-      .video1 {
-        width: auto;
-        }
-
-      .parrafo{
-        margin-right: 6rem;
-        margin-left: 1rem;
-        } 
+  .video1 {
+    width: auto;
     }
 
+  .parrafo{
+    margin-right: 6rem;
+    margin-left: 1rem;
+    } 
+}
 
-@media screen and (min-width: 465px) and (max-width: 766px)  {
+    
+
+
+  @media screen and (min-width: 465px) and (max-width: 766px)  {
 
   h1{
     margin-right: 18rem;
@@ -507,145 +513,157 @@ label{
   }
 
   .navbar{
-      display: flex;
       flex-wrap:wrap;
-      align-items: center;
       justify-content: center;
+      @include flex-center;
     }
   
   .parrafo{
-    margin-right: 0rem;
+    margin-right: 1rem;
     margin-left: 1rem;
     } 
-
-    p{
-      font-size: 2rem;
-      margin-left: 4rem;
-      margin-right: 6rem;
-    }
   
   .formacionesPadre {  
+    display: grid;
     grid-template-areas:
       "tituloFormaciones"
       "Reinhold"
       "ICE"
       "Zeppelin";
-    }
+      p {  
+        font-size: 1.5rem;
+        margin-right: 6rem;
+        }
+  }
   
   .reinhold {  
     grid-template-areas:
-      "tituloReinhold tituloReinhold"
-      "imagenReinhold textoReinhold";
+      "tituloReinhold"
+      "imagenReinhold"
+      "textoReinhold";
     grid-area: Reinhold;
     }
   
-    .ice {  
-      grid-template-areas:
-        "tituloICE tituloICE"
-        "textoICE imagenICE";
-      grid-area: ICE;
+  .ice {  
+    grid-template-areas:
+      "tituloICE"
+      "imagenICE"
+      "textoICE";
+    grid-area: ICE;
     }
   
-    .zeppelin {  
-      grid-template-areas:
-        "tituloZeppelin tituloZeppelin"
-        "imagenZeppelin textoZeppelin";
-      grid-area: Zeppelin;
+  .zeppelin {  
+    grid-template-areas:
+      "tituloZeppelin"
+      "imagenZeppelin"
+      "textoZeppelin";
+    grid-area: Zeppelin;
+    }
+  
+  .tituloReinhold { 
+    font-size: 1.8rem;
+    }
+  
+  .tituloICE { 
+    font-size: 1.8rem;
+    }
+  
+  .tituloZeppelin { 
+    font-size: 1.8rem;
     }
   
     
-    .carousel-control-prev{
-      height: 70%;
-      margin-top: 8rem;
+  .carousel-control-prev{
+    height: 70%;
+    margin-top: 8rem;
     }
   
-    .multimediaPadre {  
-      display: grid;
-      grid-auto-flow: row;
-      grid-template-areas:
-        "tituloMultimedia"
-        "Fotos"
-        "Video";
+  .multimediaPadre {  
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tituloMultimedia"
+      "Fotos"
+      "Video";
       }
 
-      .Fotos {
-        justify-self: center;
-        width: 70%;
-        height: 70%;
-        margin-bottom: 3rem;
-        gap: 1rem;
-        grid-template-areas:
-          "tituloFotos"
-          "foto1"
-          "foto2"
-          "foto3"
-          "foto4"
-          "foto5"
-          "foto6"
-          "foto7";
-          img{
-            &:hover{
-            transform: scale(1.3);
-          }
+  .Fotos {
+    justify-self: center;
+    width: 70%;
+    height: 70%;
+    margin-bottom: 3rem;
+    gap: 1rem;
+    grid-template-areas:
+      "tituloFotos"
+      "foto1"
+      "foto2"
+      "foto3"
+      "foto4"
+      "foto5"
+      "foto6"
+      "foto7";
+      img{
+        &:hover{
+        transform: scale(1.3);
+      }
     }
   }
   
-    .Video{ 
-      margin: 0rem;
-      }
+  .Video{ 
+    margin: 0rem;
+    }
   }
   
   
   @media screen and (max-width: 465px){
     
-    h1{
-      margin: 0rem 6rem;
-      display: inline;
-      a {
-          display: inline;
-          justify-content:center;
-          font-size: 3rem;
-          padding: 0px 5px;
-        }
+  h1{
+    margin: 0rem 6rem;
+    display: inline;
+    a {
+        display: inline;
+        justify-content:center;
+        font-size: 3rem;
+        padding: 0px 5px;
+      }
   }
 
   .navbar{
-      display: flex;
       flex-wrap:wrap;
-      align-items: center;
       justify-content: center;
+      @include flex-center;
     }
   
-    .parrafo{
-      margin-right: 4rem;
-      margin-left: 0rem;
+  .parrafo{
+    margin-right: 4rem;
+    margin-left: 0rem;
     } 
   
-    p{
-      font-size: 2rem;
-      margin-left: 4rem;
+  p{
+    font-size: 2rem;
+    margin-left: 4rem;
     }
    
-    h2{
-      font-size: 2.2rem;
-      max-width: 100%;
-      margin-top: 6rem;
+  h2{
+    font-size: 2.2rem;
+    max-width: 100%;
+    margin-top: 6rem;
     }
   
-    .formacionesPadre {  
-      display: grid;
-      grid-template-areas:
-        "tituloFormaciones"
-        "Reinhold"
-        "ICE"
-        "Zeppelin";
-        p {  
-          font-size: 1.5rem;
-          margin-right: 6rem;
-          }
+  .formacionesPadre {  
+    display: grid;
+    grid-template-areas:
+      "tituloFormaciones"
+      "Reinhold"
+      "ICE"
+      "Zeppelin";
+      p {  
+        font-size: 1.5rem;
+        margin-right: 6rem;
+        }
   }
   
-    .reinhold {  
+  .reinhold {  
       grid-template-areas:
         "tituloReinhold"
         "imagenReinhold"
@@ -653,85 +671,101 @@ label{
       grid-area: Reinhold;
     }
   
-    .ice {  
-      grid-template-areas:
-        "tituloICE"
-        "imagenICE"
-        "textoICE";
-      grid-area: ICE;
-    }
+  .ice {  
+    grid-template-areas:
+      "tituloICE"
+      "imagenICE"
+      "textoICE";
+    grid-area: ICE;
+  }
   
-    .zeppelin {  
-      grid-template-areas:
-        "tituloZeppelin"
-        "imagenZeppelin"
-        "textoZeppelin";
-      grid-area: Zeppelin;
-    }
+  .zeppelin {  
+    grid-template-areas:
+      "tituloZeppelin"
+      "imagenZeppelin"
+      "textoZeppelin";
+    grid-area: Zeppelin;
+  }
   
-    .tituloReinhold { 
-      font-size: 1.8rem;
-    }
+  .tituloReinhold { 
+    font-size: 1.8rem;
+  }
   
-    .tituloICE { 
-      font-size: 1.8rem;
-    }
+  .tituloICE { 
+    font-size: 1.8rem;
+  }
   
-    .tituloZeppelin { 
-      font-size: 1.8rem;
-    }
+  .tituloZeppelin { 
+    font-size: 1.8rem;
+  }
   
-    .carouselPadre{
-      width: 100%;
-      margin-top: 4rem;
-    }
+  .carouselPadre{
+    width: 100%;
+    margin-top: 4rem;
+  }
   
-    .carousel-control-prev{
-      height: 70%;
-      margin-top: 8rem;
-    }
+  .carousel-control-prev{
+    height: 70%;
+    margin-top: 8rem;
+  }
   
-    .botonMenu {
-      font-size: large;
-    }
+  .botonMenu {
+    font-size: large;
+  }
   
-    .Video{ 
-      margin: 0rem;
-    }
+  .Video{ 
+    margin: 0rem;
+  }
   
-    .multimediaPadre {  
-      display: grid;
-      grid-auto-flow: row;
-      grid-template-areas:
-        "tituloMultimedia"
-        "Fotos"
-        "Video";
-    }
+  .multimediaPadre {  
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tituloMultimedia"
+      "Fotos"
+      "Video";
+  }
 
-    .Fotos {
-      justify-self: center;
-      width: 70%;
-      height: 70%;
-      margin-bottom: 3rem;
-      gap: 1rem;
-      grid-template-areas:
-        "tituloFotos"
-        "foto1"
-        "foto2"
-        "foto3"
-        "foto4"
-        "foto5"
-        "foto6"
-        "foto7";
-        img{
-          &:hover{
-          transform: scale(1.4);
-        }
+  .Fotos {
+    justify-self: center;
+    width: 70%;
+    height: 70%;
+    margin-bottom: 3rem;
+    gap: 1rem;
+    grid-template-areas:
+      "tituloFotos"
+      "foto1"
+      "foto2"
+      "foto3"
+      "foto4"
+      "foto5"
+      "foto6"
+      "foto7";
+      img{
+        &:hover{
+        transform: scale(1.4);
+      }
   }
 }
   
-    .video1 {
-      width: auto;
-      }
-  }
+  .video1 {
+    width: auto;
+    }
+}
   
+
+ /* ----------------************* EXTENDS *************------------------------------ */
+
+%titulos {
+  color: whitesmoke;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------*/
+
+
+  /*REVISAR FOOTER DE INDEX*/
