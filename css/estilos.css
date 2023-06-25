@@ -1,3 +1,4 @@
+/* -------------------------- Variables  ----------------------------- */
 /* -------------------------- Estilos  ----------------------------- */
 * {
   margin: 0;
@@ -455,7 +456,7 @@ label {
     align-items: center;
   }
   .parrafo {
-    margin-right: 1rem;
+    margin-right: 2rem;
     margin-left: 1rem;
   }
   .formacionesPadre {
