@@ -142,10 +142,6 @@ nav {
   z-index: 2;
 }
 
-.navbar-nav {
-  z-index: 99;
-}
-
 /* --------------------------- Footer ----------------------------- */
 footer {
   height: 3rem;
@@ -385,7 +381,12 @@ label {
   justify-content: center;
   align-items: center;
   width: max-content;
-  margin-top: 2rem;
+  margin-top: 8rem;
+  z-index: -1;
+}
+
+.carousel {
+  z-index: -99;
 }
 
 .carousel-caption h5 {
@@ -608,8 +609,5 @@ h2, h3 {
   color: whitesmoke;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/*---------------------------------------------------------------------*/
-/*REVISAR FOOTER DE INDEX*/
 
 /*# sourceMappingURL=estilos.css.map */
