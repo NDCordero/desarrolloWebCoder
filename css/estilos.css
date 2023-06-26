@@ -151,6 +151,7 @@ footer {
   box-shadow: 0.5px 0.5px 10px 0.2px rgb(3, 3, 3);
   position: absolute;
   bottom: 0;
+  z-index: 99;
 }
 
 .iconoRedes {
