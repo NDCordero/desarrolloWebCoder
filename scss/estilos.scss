@@ -56,7 +56,7 @@ header{
 /* -------------------------- Principal ----------------------------- */
 
 body{
-  background-image: url(../imagenes/trenfondo.png);
+  background-image: url(../imagenes/trenfondo2.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -105,7 +105,7 @@ h2 {
 
 h3{
   @extend %titulos;
-  font-size: 2.2rem;
+  font-size: 2.8rem;
 }
 
 h4{
@@ -115,8 +115,8 @@ h4{
 }
 
 h5{
-  background-color:rgba(128, 128, 128, 0.699);
   margin-bottom: -2rem;
+  margin-top: -1rem;
 }
 
 
@@ -542,12 +542,19 @@ label{
     }
 
     .carousel-caption{
+      background-color: #615958af;
+      height: 12%;
+      width: 70;
+      text-align: center;
       h5{
           font-size:medium;
       }
       p{
           font-size:small;
+          text-align: center;
+          margin-left: 0rem;
       }
+  
     }
 
     .carousel-item{
@@ -572,6 +579,10 @@ label{
       top: 10rem;
       z-index: -999;
     } 
+    
+
+    /* --------------------------- Contacto ----------------------------- */
+
     
 
     /* ----------------************* MEDIA QUERIES *************------------------------------ */
