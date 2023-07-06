@@ -524,8 +524,22 @@ label{
   
     /*------------------------------- Curiosidades ----------------------------------------*/
   
+    .textoCuriosidades{
+      font-size: 2.2rem;
+      margin-top: 2rem;
+      margin-right: 4rem;
+    }
    
 
+    .carouselPadre{
+      justify-content: center;
+      align-items: center;
+      width:max-content;
+      margin-top: 8rem;
+      z-index: -99;
+    }
+
+  
     .carousel{
       z-index: -99;
       border-radius: 5px;
@@ -575,7 +589,67 @@ label{
 
     /* --------------------------- Contacto ----------------------------- */
 
-    
+    .contactoPadre {
+      display: grid;
+      grid-template-areas:
+    "tituloContacto tituloContacto"
+    "biografia biografia"
+    "formulario enlaces";
+      p {  
+        width: 80%;
+        height: auto;
+        font-size: 2rem;
+        color: $colorTextos;
+        margin-top: 5rem;
+        align-self: center;
+        margin-right: 30rem;
+        }
+      img{
+        width: 75%;
+        height: auto;
+        margin-top: 5rem;
+        margin-left: 5rem;
+        align-self: center;
+        justify-self: center;
+        }
+     }
+
+    .tituloContacto{
+      display: grid;
+      grid-area: tituloContacto;
+    }
+     .biografia{
+      margin-top: 5rem;
+      display: grid;
+      grid-area: biografia;
+      grid-template-areas:
+      "tituloBiografia tituloBiografia"
+      "fotoBiografia textoBiografia";
+     }
+
+     .fotoBiografia{
+      display: grid;
+      grid-area: fotoBiografia;
+      border-radius: 5px;
+      box-shadow: 3px 3px 15px 10px rgb(3, 3, 3);
+     }
+
+     .textoBiografia{
+      display: grid;
+      grid-area: textoBiografia;
+     }
+
+     .formulario{
+      display: grid;
+      grid-area: formulario;
+      margin-top: 5rem;
+     }
+
+     .tituloBiografia{
+      display: grid;
+      grid-area: tituloBiografia;
+      justify-content: center;
+     }
 
     /* ----------------************* MEDIA QUERIES *************------------------------------ */
 
@@ -625,6 +699,15 @@ label{
       margin-right: 6rem;
     } 
   
+    .contactoPadre {
+      p{
+        font-size: 1.8rem;
+      }
+      img{
+        width: 85%;
+        height: auto;
+      }
+    }
 }
 
     
@@ -756,8 +839,29 @@ label{
       
     .carousel-control-next{
       display: none;
-
     } 
+
+    .contactoPadre {
+      p{
+        font-size: 1.6rem;
+      }
+      img{
+        width: 40%;
+        height: auto;
+        margin-left: 0rem;
+      }
+    }
+
+    
+    .biografia{
+      margin-top: 5rem;
+      display: grid;
+      grid-area: biografia;
+      grid-template-areas:
+      "tituloBiografia"
+      "fotoBiografia"
+      "textoBiografia";
+    }
   }
   
   
@@ -894,14 +998,34 @@ label{
     }
 
     .inicio{
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
     
     .copyright{
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
-  
-}
+    .contactoPadre {
+      p{
+        font-size: 1.8rem;
+        size: 50%;
+      }
+      img{
+        width: 40%;
+        height: auto;
+      }
+    }
+
+    
+    .biografia{
+      margin-top: 5rem;
+      display: grid;
+      grid-area: biografia;
+      grid-template-areas:
+      "tituloBiografia"
+      "fotoBiografia"
+      "textoBiografia";
+    }
+  }
   
 
