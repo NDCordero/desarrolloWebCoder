@@ -123,9 +123,9 @@ h5{
 p {  
   font-size: 2rem;
   color: $colorTextos;
-  margin-top: 2rem;
   margin-left: 6rem;
   text-align: justify;
+  font-weight: 350;
 }
 
 
@@ -170,13 +170,6 @@ nav{
   z-index: 999;
 }
 
-.parrafo{  
-  font-size: 2rem;
-  color: $colorTextos;
-  margin-top: 0rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-} 
 
 .nav-item {
   margin: 0.4rem 0rem;
@@ -313,7 +306,7 @@ label{
 .parrafoIndex {
   display: grid;
   grid-area: parrafoIndex;
-  margin-top: 10rem;
+  margin-top: 12rem;
 }
 
 .videoIndex {
@@ -334,18 +327,20 @@ label{
       "Reinhold Reinhold"
       "ICE ICE"
       "Zeppelin Zeppelin";
-      p {  
-          width: 80%;
-          height: auto;
-          font-size: 2rem;
-          color: $colorTextos;
-          margin-top: 5rem;
-          }
-      img{
-          width: 80%;
-          height: auto;
-          margin-top: 5rem;
-          }
+    p {  
+        width: 80%;
+        height: auto;
+        font-size: 2rem;
+        color: $colorTextos;
+        margin-top: 5rem;
+        align-self: center;
+        }
+    img{
+        width: 80%;
+        height: auto;
+        margin-top: 5rem;
+        align-self: center;
+        }
   }
   
   .tituloFormaciones { 
@@ -363,7 +358,6 @@ label{
   
   .tituloReinhold { 
     grid-area: tituloReinhold; 
-    font-size: x-large;
     margin-top: 5rem;
     justify-self: center;
   }
@@ -371,6 +365,7 @@ label{
   .imagenReinhold { 
     grid-area: imagenReinhold; 
     justify-self: center;
+    margin-left: 4rem;
     border: 2px solid #000;
     box-shadow:  0.5px 0.5px 5px #d1d1d1;
   }
@@ -390,7 +385,6 @@ label{
   
   .tituloICE { 
     grid-area: tituloICE; 
-    font-size: x-large;
     margin-top: 10rem;
     justify-self: center;
   }
@@ -402,6 +396,7 @@ label{
   .imagenICE { 
     grid-area: imagenICE; 
     justify-self: center;
+    margin-right: 4rem;
     border: 2px solid #000;
     box-shadow:  0.5px 0.5px 5px #d1d1d1;
   }
@@ -417,7 +412,6 @@ label{
   
   .tituloZeppelin { 
     grid-area: tituloZeppelin; 
-    font-size: x-large;
     margin-top: 10rem;
     justify-self: center;
   }
@@ -425,6 +419,7 @@ label{
   .imagenZeppelin { 
     grid-area: imagenZeppelin; 
     justify-self: center;
+    margin-left: 4rem;
     border: 2px solid #000;
     box-shadow:  0.5px 0.5px 5px #d1d1d1;
   }
@@ -529,25 +524,22 @@ label{
   
     /*------------------------------- Curiosidades ----------------------------------------*/
   
-    .carouselPadre{
-      justify-content: center;
-      align-items: center;
-      width:max-content;
-      margin-top: 8rem;
-      z-index: -99;
-    }
+   
 
     .carousel{
       z-index: -99;
+      border-radius: 5px;
+      box-shadow: 1px 1px 15px 1px rgb(3, 3, 3);
     }
 
     .carousel-caption{
-      background-color: #615958af;
       height: 12%;
-      width: 70;
+      width: 70%;
       text-align: center;
+      bottom: 0;
       h5{
           font-size:medium;
+          background-color: #615958c0;
       }
       p{
           font-size:small;
@@ -572,12 +564,12 @@ label{
 
     .carousel-control-prev {
       top: 10rem;
-      z-index: -999;
+      margin-left: 18rem;
     }
       
     .carousel-control-next{
       top: 10rem;
-      z-index: -999;
+      margin-right: 18rem;
     } 
     
 
@@ -617,7 +609,22 @@ label{
     margin-left: 1rem;
     } 
 
+    .formacionesPadre {
+      p{
+        font-size: 1.8rem;
+      }
+    }
 
+    .carousel-control-prev {
+      top: 10rem;
+      margin-left: 6rem;
+    }
+      
+    .carousel-control-next{
+      top: 10rem;
+      margin-right: 6rem;
+    } 
+  
 }
 
     
@@ -654,7 +661,7 @@ label{
       "ICE"
       "Zeppelin";
       p {  
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-right: 6rem;
         }
   }
@@ -684,15 +691,15 @@ label{
     }
   
   .tituloReinhold { 
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     }
   
   .tituloICE { 
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     }
   
   .tituloZeppelin { 
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     }
 
     .carouselPadre{
@@ -742,6 +749,15 @@ label{
     .copyright{
       font-size: 1.4rem;
     }
+
+    .carousel-control-prev {
+      display: none;
+    }
+      
+    .carousel-control-next{
+      display: none;
+
+    } 
   }
   
   
@@ -884,6 +900,8 @@ label{
     .copyright{
       font-size: 1.2rem;
     }
+
+  
 }
   
 
