@@ -92,7 +92,6 @@ h5 {
 p {
   font-size: 2rem;
   color: whitesmoke;
-  margin-left: 6rem;
   text-align: justify;
   font-weight: 350;
 }
@@ -100,6 +99,7 @@ p {
 /*---------------------- Index ---------------------*/
 .parrafo {
   margin-top: 12rem;
+  margin-left: 8rem;
 }
 
 /* --------------------------- Menu ----------------------------- */
@@ -475,10 +475,11 @@ label {
   font-size: 2rem;
   color: whitesmoke;
   margin-top: 5rem;
+  margin-left: 6rem;
   align-self: center;
 }
 .biografiaPadre img {
-  width: 75%;
+  width: 60%;
   height: auto;
   margin-top: 5rem;
   margin-left: 5rem;
@@ -548,10 +549,6 @@ label {
   .video1 {
     width: auto;
   }
-  .parrafo {
-    margin-right: 6rem;
-    margin-left: 1rem;
-  }
   .formacionesPadre p {
     font-size: 1.8rem;
   }
@@ -570,6 +567,10 @@ label {
     width: 85%;
     height: auto;
   }
+  .parrafo {
+    margin-left: 4rem;
+    margin-right: 6rem;
+  }
 }
 @media screen and (min-width: 465px) and (max-width: 766px) {
   h1 {
@@ -586,10 +587,6 @@ label {
     justify-content: center;
     display: flex;
     align-items: center;
-  }
-  .parrafo {
-    margin-right: 3rem;
-    margin-left: 0rem;
   }
   .formacionesPadre {
     display: grid;
@@ -677,8 +674,10 @@ label {
   p {
     font-size: 1.8rem;
     color: whitesmoke;
-    margin-left: 1.5rem;
-    margin-right: 1rem;
+  }
+  .parrafo {
+    width: 80%;
+    margin-left: 3rem;
   }
 }
 @media screen and (max-width: 465px) {
@@ -709,7 +708,6 @@ label {
   }
   .formacionesPadre p {
     font-size: 1.5rem;
-    margin-right: 6rem;
   }
   .formacionesPadre img {
     margin-left: 0rem;
@@ -788,14 +786,16 @@ label {
   .footer img {
     width: 1.5rem;
     margin-top: 0.3rem;
-    margin-right: 1rem;
-    margin-left: 0.1rem;
+    margin-right: 0.2rem;
+    margin-left: 0rem;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: whitesmoke;
-    margin-left: 1.5rem;
-    margin-right: 1rem;
+  }
+  .parrafo {
+    width: 80%;
+    margin-left: 2rem;
   }
 }
 
