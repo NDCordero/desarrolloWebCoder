@@ -98,7 +98,7 @@ p {
 }
 
 /*---------------------- Index ---------------------*/
-.parrafoIndex {
+.parrafo {
   margin-top: 12rem;
 }
 
@@ -596,8 +596,9 @@ label {
     grid-template-areas: "tituloFormaciones" "Reinhold" "ICE" "Zeppelin";
   }
   .formacionesPadre p {
-    font-size: 1.8rem;
-    margin-right: 4rem;
+    font-size: 1.5rem;
+    margin-right: 6rem;
+    margin-left: 5rem;
   }
   .formacionesPadre img {
     margin-left: 0rem;
@@ -673,6 +674,12 @@ label {
   .formulario {
     width: auto;
   }
+  p {
+    font-size: 1.8rem;
+    color: whitesmoke;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+  }
 }
 @media screen and (max-width: 465px) {
   h1 {
@@ -690,14 +697,6 @@ label {
     justify-content: center;
     display: flex;
     align-items: center;
-  }
-  .parrafo {
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-  p {
-    font-size: 2rem;
-    margin-left: 4rem;
   }
   h2 {
     font-size: 2.2rem;
@@ -791,6 +790,12 @@ label {
     margin-top: 0.3rem;
     margin-right: 1rem;
     margin-left: 0.1rem;
+  }
+  p {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
   }
 }
 
