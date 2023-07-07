@@ -148,7 +148,7 @@ nav{
 }
 
 .botonMenu {
-  font-size:large;
+  font-size: 1.7rem;
   font-weight: 600;
   background-color: $colorBotones;
   padding: 0.3rem 1.5rem;
@@ -280,11 +280,6 @@ label{
     .links a:hover {
       background-color: #ccc;
       cursor: url(/imagenes/iconotren.png), auto;
-    }; 
-
-    .links li{
-      list-style-image: url(/imagenes/iconotren.png);
-      padding-left: 1rem;
     }
   }
 
@@ -589,12 +584,14 @@ label{
 
     /* --------------------------- Contacto ----------------------------- */
 
-    .contactoPadre {
+    
+
+    .biografiaPadre {
       display: grid;
       grid-template-areas:
-    "tituloContacto tituloContacto"
-    "biografia biografia"
-    "formulario enlaces";
+      "tituloContacto tituloContacto"
+      "biografia biografia"
+      "formulario enlaces";
       p {  
         width: 80%;
         height: auto;
@@ -614,6 +611,19 @@ label{
         }
      }
 
+     .enlaces{
+      display: grid; 
+      grid-area: enlaces;
+     }
+
+     
+     .formulario{
+      display: grid;
+      grid-area: formulario;
+      margin-top: 5rem;
+      margin-left: 8rem;
+     }
+
     .tituloContacto{
       display: grid;
       grid-area: tituloContacto;
@@ -627,6 +637,14 @@ label{
       "fotoBiografia textoBiografia";
      }
 
+   
+
+     .tituloBiografia{
+      display: grid;
+      grid-area: tituloBiografia;
+      justify-content: center;
+     }
+
      .fotoBiografia{
       display: grid;
       grid-area: fotoBiografia;
@@ -635,28 +653,23 @@ label{
      }
 
      .textoBiografia{
-      display: grid;
+      display: grid;   
       grid-area: textoBiografia;
      }
 
-     .formulario{
-      display: grid;
-      grid-area: formulario;
-      margin-top: 5rem;
-     }
+     
 
-     .tituloBiografia{
-      display: grid;
-      grid-area: tituloBiografia;
-      justify-content: center;
-     }
+
+    
+
+    
 
     /* ----------------************* MEDIA QUERIES *************------------------------------ */
 
   @media screen and (min-width: 768px) and (max-width: 1024px)  {
       
   .botonMenu {
-    font-size:medium;
+    font-size: 1.5rem;
     padding: 0.3rem 1rem;
   }
       
@@ -699,7 +712,7 @@ label{
       margin-right: 6rem;
     } 
   
-    .contactoPadre {
+    .biografiaPadre {
       p{
         font-size: 1.8rem;
       }
@@ -745,7 +758,7 @@ label{
       "Zeppelin";
       p {  
         font-size: 1.8rem;
-        margin-right: 6rem;
+        margin-right: 4rem;
         }
   }
   
@@ -785,9 +798,9 @@ label{
     font-size: 2.2rem;
     }
 
-    .carouselPadre{
-      width: 100%;
-      margin-top: 4rem;
+  .carouselPadre{
+    width: 100%;
+    margin-top: 4rem;
     }
   
   .multimediaPadre {  
@@ -833,15 +846,15 @@ label{
       font-size: 1.4rem;
     }
 
-    .carousel-control-prev {
-      display: none;
-    }
+    // .carousel-control-prev {
+    //   display: none;
+    // }
       
-    .carousel-control-next{
-      display: none;
-    } 
+    // .carousel-control-next{
+    //   display: none;
+    // } 
 
-    .contactoPadre {
+    .biografiaPadre {
       p{
         font-size: 1.6rem;
       }
@@ -1005,7 +1018,7 @@ label{
       font-size: 1rem;
     }
 
-    .contactoPadre {
+    .biografiaPadre {
       p{
         font-size: 1.8rem;
         size: 50%;
