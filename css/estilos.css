@@ -97,6 +97,11 @@ p {
   font-weight: 350;
 }
 
+/*---------------------- Index ---------------------*/
+.parrafoIndex {
+  margin-top: 12rem;
+}
+
 /* --------------------------- Menu ----------------------------- */
 nav {
   display: inline;
@@ -113,19 +118,6 @@ nav {
   margin-left: 1.3rem;
 }
 
-.botonMenu {
-  font-size: 1.7rem;
-  font-weight: 600;
-  background-color: #f0f3bd;
-  padding: 0.3rem 1.5rem;
-  border-radius: 0.5rem;
-  display: inline;
-  box-shadow: 0.5px 0.5px 10px 0.2px rgb(3, 3, 3);
-}
-.botonMenu:hover {
-  background-color: #dee0ae;
-}
-
 .hamburguesa {
   background-color: #f0f3bd;
   margin-left: 2rem;
@@ -140,6 +132,21 @@ nav {
   margin: 0.4rem 0rem;
   padding: 1rem;
   z-index: 2;
+}
+.nav-item .botonMenu {
+  font-size: 1.7rem;
+  font-weight: 600;
+  background-color: #f0f3bd;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.5rem;
+  display: inline;
+  box-shadow: 0.5px 0.5px 10px 0.2px rgb(3, 3, 3);
+}
+.nav-item .botonMenu:hover {
+  background-color: #dee0ae;
+}
+.nav-item .active {
+  background-color: #dfe28b;
 }
 
 /* --------------------------- Footer ----------------------------- */
@@ -240,27 +247,6 @@ label {
 }
 
 /* ----------------------------****** GRIDS *******----------------------------------- */
-/*---------------------- Index ---------------------*/
-.contenedorIndex {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-areas: "parrafoIndex videoIndex";
-}
-
-.parrafoIndex {
-  display: grid;
-  grid-area: parrafoIndex;
-  margin-top: 12rem;
-}
-
-.videoIndex {
-  display: grid;
-  grid-area: videoIndex;
-  margin-right: 8rem;
-  margin-top: 20rem;
-  width: 100%;
-}
-
 /*------------------- Formaciones Destacadas ------------------*/
 .formacionesPadre {
   display: grid;
@@ -640,6 +626,10 @@ label {
     font-size: 1.8rem;
     margin-right: 4rem;
   }
+  .formacionesPadre img {
+    margin-left: 0rem;
+    margin-right: 1rem;
+  }
   .reinhold {
     grid-template-areas: "tituloReinhold" "imagenReinhold" "textoReinhold";
     grid-area: Reinhold;
@@ -684,6 +674,9 @@ label {
   .Video {
     margin: 0rem;
   }
+  .video1 {
+    width: auto;
+  }
   .inicio {
     font-size: 1.4rem;
   }
@@ -704,6 +697,9 @@ label {
     grid-area: biografia;
     grid-template-areas: "tituloBiografia" "fotoBiografia" "textoBiografia";
   }
+  .formulario {
+    width: auto;
+  }
 }
 @media screen and (max-width: 465px) {
   h1 {
@@ -723,7 +719,7 @@ label {
     align-items: center;
   }
   .parrafo {
-    margin-right: 4rem;
+    margin-right: 0rem;
     margin-left: 0rem;
   }
   p {
@@ -742,6 +738,10 @@ label {
   .formacionesPadre p {
     font-size: 1.5rem;
     margin-right: 6rem;
+  }
+  .formacionesPadre img {
+    margin-left: 0rem;
+    margin-right: 0.5rem;
   }
   .reinhold {
     grid-template-areas: "tituloReinhold" "imagenReinhold" "textoReinhold";
@@ -801,7 +801,6 @@ label {
   }
   .biografiaPadre p {
     font-size: 1.8rem;
-    size: 50%;
   }
   .biografiaPadre img {
     width: 40%;
@@ -812,6 +811,12 @@ label {
     display: grid;
     grid-area: biografia;
     grid-template-areas: "tituloBiografia" "fotoBiografia" "textoBiografia";
+  }
+  .footer img {
+    width: 1.5rem;
+    margin-top: 0.3rem;
+    margin-right: 1rem;
+    margin-left: 0.1rem;
   }
 }
 
