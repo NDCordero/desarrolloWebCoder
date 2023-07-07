@@ -219,33 +219,6 @@ label {
   color: #000;
 }
 
-.paginasWeb {
-  background-color: rgba(242, 242, 242, 0.5960784314);
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 1rem;
-  width: 300px;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  text-align: left;
-  font-size: 1.5rem;
-  color: whitesmoke;
-}
-.paginasWeb h3 {
-  margin-bottom: 5rem;
-}
-.paginasWeb .links a {
-  color: #333;
-  text-decoration: none;
-  text-align: justify;
-  margin: 1rem;
-  display: block;
-}
-.paginasWeb .links a:hover {
-  background-color: #ccc;
-  cursor: url(/imagenes/iconotren.png), auto;
-}
-
 /* ----------------------------****** GRIDS *******----------------------------------- */
 /*------------------- Formaciones Destacadas ------------------*/
 .formacionesPadre {
@@ -503,7 +476,6 @@ label {
   color: whitesmoke;
   margin-top: 5rem;
   align-self: center;
-  margin-right: 30rem;
 }
 .biografiaPadre img {
   width: 75%;
@@ -558,9 +530,10 @@ label {
 
 /* ----------------************* MEDIA QUERIES *************------------------------------ */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .botonMenu {
+  .nav-item .botonMenu {
     font-size: 1.5rem;
-    padding: 0.3rem 1rem;
+    font-weight: 600;
+    padding: 0.3rem 1.2rem;
   }
   #menu li {
     padding: 0rem 0.5rem;
@@ -615,8 +588,8 @@ label {
     align-items: center;
   }
   .parrafo {
-    margin-right: 2rem;
-    margin-left: 1rem;
+    margin-right: 3rem;
+    margin-left: 0rem;
   }
   .formacionesPadre {
     display: grid;
@@ -709,7 +682,7 @@ label {
   h1 a {
     display: inline;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 0px 5px;
   }
   .navbar {
@@ -719,8 +692,8 @@ label {
     align-items: center;
   }
   .parrafo {
-    margin-right: 0rem;
-    margin-left: 0rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
   p {
     font-size: 2rem;
@@ -805,6 +778,7 @@ label {
   .biografiaPadre img {
     width: 40%;
     height: auto;
+    margin-left: 0rem;
   }
   .biografia {
     margin-top: 5rem;

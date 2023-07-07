@@ -155,8 +155,6 @@ nav{
     }
 }
 
-
-
 .hamburguesa{
   background-color: $colorBotones;
   margin-left: 2rem;
@@ -266,38 +264,6 @@ label{
     color: #000;
   }
 }
-
-.paginasWeb {
-    background-color: #f2f2f298;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 1rem;
-    width: 300px;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    text-align:left;
-    font-size: 1.5rem;
-    color: $colorTextos;
-    h3 {
-      margin-bottom: 5rem;
-    }
-    .links a {
-      color: #333;
-      text-decoration: none;
-      text-align:justify;
-      margin: 1rem;
-      display: block;
-    }
-  
-    .links a:hover {
-      background-color: #ccc;
-      cursor: url(/imagenes/iconotren.png), auto;
-    }
-  }
-
- 
-
-
 
 /* ----------------------------****** GRIDS *******----------------------------------- */
 
@@ -590,7 +556,6 @@ label{
         color: $colorTextos;
         margin-top: 5rem;
         align-self: center;
-        margin-right: 30rem;
         }
       img{
         width: 75%;
@@ -658,10 +623,14 @@ label{
     /* ----------------************* MEDIA QUERIES *************------------------------------ */
 
   @media screen and (min-width: 768px) and (max-width: 1024px)  {
-      
-  .botonMenu {
-    font-size: 1.5rem;
-    padding: 0.3rem 1rem;
+    
+
+  .nav-item {
+    .botonMenu {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 0.3rem 1.2rem;
+    }
   }
       
   #menu {
@@ -736,8 +705,8 @@ label{
     }
   
   .parrafo{
-    margin-right: 2rem;
-    margin-left: 1rem;
+    margin-right: 3rem;
+    margin-left: 0rem;
     } 
   
   .formacionesPadre {  
@@ -880,7 +849,7 @@ label{
     a {
         display: inline;
         justify-content:center;
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding: 0px 5px;
       }
   }
@@ -892,8 +861,8 @@ label{
     }
   
   .parrafo{
-    margin-right: 0rem;
-    margin-left: 0rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     } 
   
   p{
@@ -1023,6 +992,7 @@ label{
       img{
         width: 40%;
         height: auto;
+        margin-left: 0rem;
       }
     }
 
