@@ -448,6 +448,22 @@ label {
   margin-left: 0rem;
 }
 
+.wunderland {
+  margin-top: 10rem;
+}
+.wunderland .webWunderland {
+  font-size: 2rem;
+}
+.wunderland .textoWunderland {
+  font-size: 2.2rem;
+  margin-top: 2rem;
+  margin-left: 6rem;
+}
+.wunderland .videoWunderland {
+  margin-top: 6rem;
+  margin-left: 10rem;
+}
+
 /* --------------------------- Contacto ----------------------------- */
 .biografiaPadre {
   display: grid;
