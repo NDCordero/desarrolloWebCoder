@@ -232,13 +232,10 @@ label {
   font-size: 2rem;
   color: whitesmoke;
   margin-top: 5rem;
-  align-self: center;
 }
 .formacionesPadre img {
   width: 80%;
   height: auto;
-  margin-top: 5rem;
-  align-self: center;
 }
 
 .tituloFormaciones {
@@ -260,14 +257,15 @@ label {
 
 .imagenReinhold {
   grid-area: imagenReinhold;
-  justify-self: center;
-  margin-left: 4rem;
   border: 2px solid #000;
   box-shadow: 0.5px 0.5px 5px #d1d1d1;
+  margin-left: 8rem;
+  margin-top: 6rem;
 }
 
 .textoReinhold {
   grid-area: textoReinhold;
+  margin-left: 5rem;
 }
 
 .ice {
@@ -285,14 +283,14 @@ label {
 
 .textoICE {
   grid-area: textoICE;
+  margin-left: 8rem;
 }
 
 .imagenICE {
   grid-area: imagenICE;
-  justify-self: center;
-  margin-right: 4rem;
   border: 2px solid #000;
   box-shadow: 0.5px 0.5px 5px #d1d1d1;
+  margin-top: 6rem;
 }
 
 .zeppelin {
@@ -310,14 +308,15 @@ label {
 
 .imagenZeppelin {
   grid-area: imagenZeppelin;
-  justify-self: center;
-  margin-left: 4rem;
   border: 2px solid #000;
   box-shadow: 0.5px 0.5px 5px #d1d1d1;
+  margin-left: 8rem;
+  margin-top: 6rem;
 }
 
 .textoZeppelin {
   grid-area: textoZeppelin;
+  margin-left: 5rem;
 }
 
 /*---------------------------------- Multimedia ---------------------------------*/
@@ -552,6 +551,26 @@ label {
   .formacionesPadre p {
     font-size: 1.8rem;
   }
+  .imagenReinhold {
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+  .textoReinhold {
+    margin-left: 4rem;
+  }
+  .textoICE {
+    margin-left: 6rem;
+  }
+  .imagenICE {
+    margin-top: 6rem;
+  }
+  .imagenZeppelin {
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+  .textoZeppelin {
+    margin-left: 4rem;
+  }
   .carousel-control-prev {
     top: 10rem;
     margin-left: 6rem;
@@ -566,10 +585,6 @@ label {
   .biografiaPadre img {
     width: 85%;
     height: auto;
-  }
-  .parrafo {
-    margin-left: 4rem;
-    margin-right: 6rem;
   }
 }
 @media screen and (min-width: 465px) and (max-width: 766px) {
@@ -588,18 +603,16 @@ label {
     display: flex;
     align-items: center;
   }
+  .parrafo {
+    width: 80%;
+    margin-left: 3rem;
+  }
   .formacionesPadre {
     display: grid;
     grid-template-areas: "tituloFormaciones" "Reinhold" "ICE" "Zeppelin";
   }
   .formacionesPadre p {
     font-size: 1.5rem;
-    margin-right: 6rem;
-    margin-left: 5rem;
-  }
-  .formacionesPadre img {
-    margin-left: 0rem;
-    margin-right: 1rem;
   }
   .reinhold {
     grid-template-areas: "tituloReinhold" "imagenReinhold" "textoReinhold";
@@ -613,11 +626,35 @@ label {
     grid-template-areas: "tituloZeppelin" "imagenZeppelin" "textoZeppelin";
     grid-area: Zeppelin;
   }
+  .imagenReinhold {
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+  .textoReinhold {
+    margin-left: 6rem;
+  }
+  .textoICE {
+    margin-left: 6rem;
+  }
+  .imagenICE {
+    margin-top: 6rem;
+    margin-left: 6rem;
+  }
+  .imagenZeppelin {
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+  .textoZeppelin {
+    margin-left: 6rem;
+  }
   .tituloReinhold {
     font-size: 2.2rem;
   }
   .tituloICE {
     font-size: 2.2rem;
+  }
+  .textoICE {
+    margin-right: 5rem;
   }
   .tituloZeppelin {
     font-size: 2.2rem;
@@ -674,9 +711,6 @@ label {
   p {
     font-size: 1.8rem;
     color: whitesmoke;
-  }
-  .parrafo {
-    width: 80%;
     margin-left: 3rem;
   }
 }
@@ -709,10 +743,6 @@ label {
   .formacionesPadre p {
     font-size: 1.5rem;
   }
-  .formacionesPadre img {
-    margin-left: 0rem;
-    margin-right: 0.5rem;
-  }
   .reinhold {
     grid-template-areas: "tituloReinhold" "imagenReinhold" "textoReinhold";
     grid-area: Reinhold;
@@ -733,6 +763,27 @@ label {
   }
   .tituloZeppelin {
     font-size: 1.8rem;
+  }
+  .imagenReinhold {
+    margin-left: 4rem;
+    margin-top: 6rem;
+  }
+  .textoReinhold {
+    margin-left: 4rem;
+  }
+  .textoICE {
+    margin-left: 4rem;
+  }
+  .textoZeppelin {
+    margin-left: 4rem;
+  }
+  .imagenICE {
+    margin-top: 6rem;
+    margin-left: 4rem;
+  }
+  .imagenZeppelin {
+    margin-left: 4rem;
+    margin-top: 6rem;
   }
   .carouselPadre {
     width: 100%;
