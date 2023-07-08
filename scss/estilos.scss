@@ -273,8 +273,6 @@ label {
 
 /* ----------------------------****** GRIDS *******----------------------------------- */
 
-
-
 /*------------------- Formaciones Destacadas ------------------*/
 
 .formacionesPadre {
@@ -492,67 +490,61 @@ label {
 .textoCuriosidades {
   font-size: 2.2rem;
   margin-top: 2rem;
-  margin-right: 4rem;
+  margin-left: 6rem;
 }
 
 
 .carouselPadre {
-  justify-content: center;
-  align-items: center;
   width: max-content;
-  margin-top: 8rem;
+  margin-top: 6rem;
   z-index: -99;
-}
 
+  .carousel {
+    z-index: -99;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 1px rgb(3, 3, 3);
 
-.carousel {
-  z-index: -99;
-  border-radius: 5px;
-  box-shadow: 1px 1px 15px 1px rgb(3, 3, 3);
-}
+    .carousel-item {
+      width: 100%;
+      background-color: #00000041;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
 
-.carousel-caption {
-  height: 12%;
-  width: 70%;
-  text-align: center;
-  bottom: 0;
+      img {
+        object-fit: scale-down;
+        height: 60vh;
+        width: auto;
+      }
 
-  h5 {
-    font-size: medium;
-    background-color: #615958c0;
-  }
+      .carousel-caption {
+        height: 12%;
+        width: 70%;
+        text-align: center;
+        bottom: 0;
 
-  p {
-    font-size: small;
-    text-align: center;
-    margin-left: 0rem;
-  }
+        h5 {
+          font-size: medium;
+          background-color: #615958c0;
+        }
 
-}
-
-.carousel-item {
-  width: 100%;
-  background-color: #00000041;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  img {
-    object-fit: scale-down;
-    height: 60vh;
-    width: auto;
+        p {
+          font-size: small;
+          text-align: center;
+          margin-left: 0rem;
+        }
+      }
+    }
   }
 }
 
-.carousel-control-prev {
-  top: 10rem;
-  margin-left: 18rem;
-}
 
-.carousel-control-next {
-  top: 10rem;
-  margin-right: 18rem;
-}
+
+
+
+
+
+
 
 
 /* --------------------------- Contacto ----------------------------- */
@@ -565,6 +557,7 @@ label {
     "tituloContacto tituloContacto"
     "biografia biografia"
     "formulario enlaces";
+
   p {
     width: 80%;
     height: auto;
@@ -574,6 +567,7 @@ label {
     margin-left: 6rem;
     align-self: center;
   }
+
   img {
     width: 60%;
     height: auto;
@@ -673,31 +667,34 @@ label {
   .formacionesPadre {
     p {
       font-size: 1.8rem;
-      }
     }
+  }
 
-    .imagenReinhold {
-      margin-left: 6rem;
-      margin-top: 6rem;
-    }
-    .textoReinhold {
-      margin-left: 4rem;
-    }
-    .textoICE {
-      margin-left: 6rem;
-    }
-    
-    .imagenICE {
-      margin-top: 6rem;
-    }
-    .imagenZeppelin {
-      margin-left: 6rem;
-      margin-top: 6rem;
-    }
-    
-    .textoZeppelin {
-      margin-left: 4rem;
-    }
+  .imagenReinhold {
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+
+  .textoReinhold {
+    margin-left: 4rem;
+  }
+
+  .textoICE {
+    margin-left: 6rem;
+  }
+
+  .imagenICE {
+    margin-top: 6rem;
+  }
+
+  .imagenZeppelin {
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+
+  .textoZeppelin {
+    margin-left: 4rem;
+  }
 
 
   .carousel-control-prev {
@@ -745,10 +742,10 @@ label {
     @include flex-center;
   }
 
-  .parrafo{
+  .parrafo {
     width: 80%;
     margin-left: 3rem;
-    }
+  }
 
   .formacionesPadre {
     display: grid;
@@ -757,10 +754,11 @@ label {
       "Reinhold"
       "ICE"
       "Zeppelin";
+
     p {
       font-size: 1.5rem;
-      }
     }
+  }
 
 
   .reinhold {
@@ -791,22 +789,25 @@ label {
     margin-left: 6rem;
     margin-top: 6rem;
   }
+
   .textoReinhold {
     margin-left: 6rem;
   }
+
   .textoICE {
     margin-left: 6rem;
   }
-  
+
   .imagenICE {
     margin-top: 6rem;
     margin-left: 6rem;
   }
+
   .imagenZeppelin {
     margin-left: 6rem;
     margin-top: 6rem;
   }
-  
+
   .textoZeppelin {
     margin-left: 6rem;
   }
@@ -884,6 +885,7 @@ label {
     p {
       font-size: 1.6rem;
     }
+
     img {
       width: 40%;
       height: auto;
@@ -911,18 +913,18 @@ label {
     margin-left: 3rem;
   }
 
- 
 
-    // .textoReinhold {
-    //   margin-left: 2rem;
-    // }
-    // .textoICE {
-    //   grid-area: textoICE;
-    // }
-    // .textoZeppelin {
-    //   grid-area: textoZeppelin;
-    // }
-  }
+
+  // .textoReinhold {
+  //   margin-left: 2rem;
+  // }
+  // .textoICE {
+  //   grid-area: textoICE;
+  // }
+  // .textoZeppelin {
+  //   grid-area: textoZeppelin;
+  // }
+}
 
 
 
@@ -1005,9 +1007,11 @@ label {
     margin-left: 4rem;
     margin-top: 6rem;
   }
+
   .textoReinhold {
     margin-left: 4rem;
   }
+
   .textoICE {
     margin-left: 4rem;
   }
@@ -1015,7 +1019,7 @@ label {
   .textoZeppelin {
     margin-left: 4rem;
   }
-  
+
   .imagenICE {
     margin-top: 6rem;
     margin-left: 4rem;
@@ -1122,7 +1126,7 @@ label {
     color: $colorTextos;
   }
 
-  .parrafo{
+  .parrafo {
     width: 80%;
     margin-left: 2rem;
   }

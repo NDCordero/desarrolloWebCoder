@@ -407,60 +407,45 @@ label {
 .textoCuriosidades {
   font-size: 2.2rem;
   margin-top: 2rem;
-  margin-right: 4rem;
+  margin-left: 6rem;
 }
 
 .carouselPadre {
-  justify-content: center;
-  align-items: center;
   width: max-content;
-  margin-top: 8rem;
+  margin-top: 6rem;
   z-index: -99;
 }
-
-.carousel {
+.carouselPadre .carousel {
   z-index: -99;
   border-radius: 5px;
   box-shadow: 1px 1px 15px 1px rgb(3, 3, 3);
 }
-
-.carousel-caption {
-  height: 12%;
-  width: 70%;
-  text-align: center;
-  bottom: 0;
-}
-.carousel-caption h5 {
-  font-size: medium;
-  background-color: rgba(97, 89, 88, 0.7529411765);
-}
-.carousel-caption p {
-  font-size: small;
-  text-align: center;
-  margin-left: 0rem;
-}
-
-.carousel-item {
+.carouselPadre .carousel .carousel-item {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2549019608);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.carousel-item img {
+.carouselPadre .carousel .carousel-item img {
   object-fit: scale-down;
   height: 60vh;
   width: auto;
 }
-
-.carousel-control-prev {
-  top: 10rem;
-  margin-left: 18rem;
+.carouselPadre .carousel .carousel-item .carousel-caption {
+  height: 12%;
+  width: 70%;
+  text-align: center;
+  bottom: 0;
 }
-
-.carousel-control-next {
-  top: 10rem;
-  margin-right: 18rem;
+.carouselPadre .carousel .carousel-item .carousel-caption h5 {
+  font-size: medium;
+  background-color: rgba(97, 89, 88, 0.7529411765);
+}
+.carouselPadre .carousel .carousel-item .carousel-caption p {
+  font-size: small;
+  text-align: center;
+  margin-left: 0rem;
 }
 
 /* --------------------------- Contacto ----------------------------- */
