@@ -121,7 +121,7 @@ h5 {
 
 
 p {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: $colorTextos;
   text-align: justify;
   font-weight: 350;
@@ -132,7 +132,7 @@ p {
 
 
 .parrafo {
-  margin-top: 12rem;
+  margin-top: 14rem;
   margin-left: 8rem;
 }
 
@@ -166,7 +166,6 @@ nav {
   z-index: 999;
 }
 
-
 .nav-item {
   margin: 0.4rem 0rem;
   padding: 1rem;
@@ -190,7 +189,6 @@ nav {
     background-color: #dfe28b;
   }
 }
-
 
 
 
@@ -270,6 +268,75 @@ label {
     color: #000;
   }
 }
+
+
+
+/*------------------------------- Curiosidades ----------------------------------------*/
+
+.textoCuriosidades {
+  font-size: 2.2rem;
+  margin-top: 2rem;
+  margin-left: 6rem;
+}
+
+
+.carouselPadre {
+  width: max-content;
+  margin-top: 6rem;
+  z-index: -99;
+
+  .carousel {
+    z-index: -99;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 1px rgb(3, 3, 3);
+
+    .carousel-item {
+      width: 100%;
+      background-color: #00000041;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      img {
+        object-fit: scale-down;
+        height: 60vh;
+        width: auto;
+      }
+
+      .carousel-caption {
+        height: 12%;
+        width: 70%;
+        text-align: center;
+        bottom: 0;
+
+        h5 {
+          font-size: medium;
+          background-color: #615958c0;
+        }
+
+        p {
+          font-size: small;
+          text-align: center;
+          margin-left: 0rem;
+        }
+      }
+    }
+  }
+}
+
+.textoWunderland {
+  font-size: 2.2rem;
+  margin-left: 6rem;
+  margin-top: 10rem;
+}
+
+.contenedorVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
 
 /* ----------------------------****** GRIDS *******----------------------------------- */
 
@@ -485,94 +552,8 @@ label {
 
 
 
-/*------------------------------- Curiosidades ----------------------------------------*/
-
-.textoCuriosidades {
-  font-size: 2.2rem;
-  margin-top: 2rem;
-  margin-left: 6rem;
-}
-
-
-.carouselPadre {
-  width: max-content;
-  margin-top: 6rem;
-  z-index: -99;
-
-  .carousel {
-    z-index: -99;
-    border-radius: 5px;
-    box-shadow: 1px 1px 15px 1px rgb(3, 3, 3);
-
-    .carousel-item {
-      width: 100%;
-      background-color: #00000041;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-
-      img {
-        object-fit: scale-down;
-        height: 60vh;
-        width: auto;
-      }
-
-      .carousel-caption {
-        height: 12%;
-        width: 70%;
-        text-align: center;
-        bottom: 0;
-
-        h5 {
-          font-size: medium;
-          background-color: #615958c0;
-        }
-
-        p {
-          font-size: small;
-          text-align: center;
-          margin-left: 0rem;
-        }
-      }
-    }
-  }
-}
-
-.wunderland {
-  margin-top: 10rem;
-  .webWunderland {
-    font-size: 2rem;
-  }
-
-  .textoWunderland {
-    font-size: 2.2rem;
-    margin-top: 2rem;
-    margin-left: 6rem;
-  }
-
-  .videoWunderland{
-    margin-top: 6rem;
-    margin-left: 10rem;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* --------------------------- Contacto ----------------------------- */
-
-
 
 .biografiaPadre {
   display: grid;
@@ -610,7 +591,7 @@ label {
 .formulario {
   display: grid;
   grid-area: formulario;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-left: 8rem;
 }
 
@@ -627,8 +608,6 @@ label {
     "tituloBiografia tituloBiografia"
     "fotoBiografia textoBiografia";
 }
-
-
 
 .tituloBiografia {
   display: grid;
@@ -647,12 +626,6 @@ label {
   display: grid;
   grid-area: textoBiografia;
 }
-
-
-
-
-
-
 
 
 /* ----------------************* MEDIA QUERIES *************------------------------------ */
@@ -741,6 +714,13 @@ label {
     }
   }
 
+  .textoCuriosidades {
+    margin-right: 3rem;
+  }
+
+  .textoWunderland {
+    margin-right: 3rem;
+  }
 }
 
 
@@ -936,17 +916,19 @@ label {
     margin-left: 3rem;
   }
 
+  .videoWunderland {
+    width: auto;
+  }
 
+  .textoCuriosidades {
+    font-size: 1.8rem;
+    margin-right: 3rem;
+  }
 
-  // .textoReinhold {
-  //   margin-left: 2rem;
-  // }
-  // .textoICE {
-  //   grid-area: textoICE;
-  // }
-  // .textoZeppelin {
-  //   grid-area: textoZeppelin;
-  // }
+  .textoWunderland {
+    font-size: 1.8rem;
+    margin-right: 3rem;
+  }
 }
 
 
@@ -1152,5 +1134,21 @@ label {
   .parrafo {
     width: 80%;
     margin-left: 2rem;
+  }
+
+  .videoWunderland {
+    width: auto;
+  }
+
+  .textoCuriosidades {
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+
+  .textoWunderland {
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
   }
 }

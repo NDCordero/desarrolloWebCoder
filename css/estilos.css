@@ -90,7 +90,7 @@ h5 {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: whitesmoke;
   text-align: justify;
   font-weight: 350;
@@ -98,7 +98,7 @@ p {
 
 /*---------------------- Index ---------------------*/
 .parrafo {
-  margin-top: 12rem;
+  margin-top: 14rem;
   margin-left: 8rem;
 }
 
@@ -448,20 +448,17 @@ label {
   margin-left: 0rem;
 }
 
-.wunderland {
+.textoWunderland {
+  font-size: 2.2rem;
+  margin-left: 6rem;
   margin-top: 10rem;
 }
-.wunderland .webWunderland {
-  font-size: 2rem;
-}
-.wunderland .textoWunderland {
-  font-size: 2.2rem;
-  margin-top: 2rem;
-  margin-left: 6rem;
-}
-.wunderland .videoWunderland {
+
+.contenedorVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 6rem;
-  margin-left: 10rem;
 }
 
 /* --------------------------- Contacto ----------------------------- */
@@ -495,7 +492,7 @@ label {
 .formulario {
   display: grid;
   grid-area: formulario;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-left: 8rem;
 }
 
@@ -586,6 +583,12 @@ label {
   .biografiaPadre img {
     width: 85%;
     height: auto;
+  }
+  .textoCuriosidades {
+    margin-right: 3rem;
+  }
+  .textoWunderland {
+    margin-right: 3rem;
   }
 }
 @media screen and (min-width: 465px) and (max-width: 766px) {
@@ -713,6 +716,17 @@ label {
     font-size: 1.8rem;
     color: whitesmoke;
     margin-left: 3rem;
+  }
+  .videoWunderland {
+    width: auto;
+  }
+  .textoCuriosidades {
+    font-size: 1.8rem;
+    margin-right: 3rem;
+  }
+  .textoWunderland {
+    font-size: 1.8rem;
+    margin-right: 3rem;
   }
 }
 @media screen and (max-width: 465px) {
@@ -848,6 +862,19 @@ label {
   .parrafo {
     width: 80%;
     margin-left: 2rem;
+  }
+  .videoWunderland {
+    width: auto;
+  }
+  .textoCuriosidades {
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+  .textoWunderland {
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
   }
 }
 
