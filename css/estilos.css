@@ -873,8 +873,10 @@ label {
     margin-left: 0rem;
   }
   p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: whitesmoke;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .parrafo {
     width: 80%;
