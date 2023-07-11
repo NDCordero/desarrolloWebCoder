@@ -228,7 +228,7 @@ label {
 
 .carouselPadre {
   width: max-content;
-  margin-top: 6rem;
+  margin-top: 3rem;
   z-index: -99;
 }
 .carouselPadre .carousel {
@@ -267,14 +267,14 @@ label {
 .textoWunderland {
   font-size: 2.2rem;
   margin-left: 6rem;
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 .contenedorVideo {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
 /* ----------------------------****** GRIDS *******----------------------------------- */
@@ -837,6 +837,7 @@ label {
   }
   .biografiaPadre p {
     font-size: 1.8rem;
+    margin-left: 4rem;
   }
   .biografiaPadre img {
     width: 40%;
@@ -874,6 +875,11 @@ label {
   .textoWunderland {
     font-size: 1.5rem;
     margin-right: 3rem;
+    margin-left: 3rem;
+  }
+  .formulario {
+    margin-right: 3rem;
+    margin-top: 2rem;
     margin-left: 3rem;
   }
 }
