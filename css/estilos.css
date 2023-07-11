@@ -199,7 +199,7 @@ label {
 
 .form-control {
   font-size: 1.3rem;
-  background-color: whitesmoke;
+  background-color: #fad2af;
 }
 
 .btn {
@@ -217,6 +217,64 @@ label {
   background-color: #dee0ae;
   border-color: #000;
   color: #000;
+}
+
+/*------------------------------- Curiosidades ----------------------------------------*/
+.textoCuriosidades {
+  font-size: 2.2rem;
+  margin-top: 2rem;
+  margin-left: 6rem;
+}
+
+.carouselPadre {
+  width: max-content;
+  margin-top: 6rem;
+  z-index: -99;
+}
+.carouselPadre .carousel {
+  z-index: -99;
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px 1px rgb(3, 3, 3);
+}
+.carouselPadre .carousel .carousel-item {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2549019608);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.carouselPadre .carousel .carousel-item img {
+  object-fit: scale-down;
+  height: 60vh;
+  width: auto;
+}
+.carouselPadre .carousel .carousel-item .carousel-caption {
+  height: 12%;
+  width: 70%;
+  text-align: center;
+  bottom: 0;
+}
+.carouselPadre .carousel .carousel-item .carousel-caption h5 {
+  font-size: medium;
+  background-color: rgba(97, 89, 88, 0.7529411765);
+}
+.carouselPadre .carousel .carousel-item .carousel-caption p {
+  font-size: small;
+  text-align: center;
+  margin-left: 0rem;
+}
+
+.textoWunderland {
+  font-size: 2.2rem;
+  margin-left: 6rem;
+  margin-top: 10rem;
+}
+
+.contenedorVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
 }
 
 /* ----------------------------****** GRIDS *******----------------------------------- */
@@ -401,64 +459,6 @@ label {
   margin-bottom: 5rem;
   justify-self: center;
   grid-area: tituloVideo;
-}
-
-/*------------------------------- Curiosidades ----------------------------------------*/
-.textoCuriosidades {
-  font-size: 2.2rem;
-  margin-top: 2rem;
-  margin-left: 6rem;
-}
-
-.carouselPadre {
-  width: max-content;
-  margin-top: 6rem;
-  z-index: -99;
-}
-.carouselPadre .carousel {
-  z-index: -99;
-  border-radius: 5px;
-  box-shadow: 1px 1px 15px 1px rgb(3, 3, 3);
-}
-.carouselPadre .carousel .carousel-item {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.2549019608);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.carouselPadre .carousel .carousel-item img {
-  object-fit: scale-down;
-  height: 60vh;
-  width: auto;
-}
-.carouselPadre .carousel .carousel-item .carousel-caption {
-  height: 12%;
-  width: 70%;
-  text-align: center;
-  bottom: 0;
-}
-.carouselPadre .carousel .carousel-item .carousel-caption h5 {
-  font-size: medium;
-  background-color: rgba(97, 89, 88, 0.7529411765);
-}
-.carouselPadre .carousel .carousel-item .carousel-caption p {
-  font-size: small;
-  text-align: center;
-  margin-left: 0rem;
-}
-
-.textoWunderland {
-  font-size: 2.2rem;
-  margin-left: 6rem;
-  margin-top: 10rem;
-}
-
-.contenedorVideo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 6rem;
 }
 
 /* --------------------------- Contacto ----------------------------- */
