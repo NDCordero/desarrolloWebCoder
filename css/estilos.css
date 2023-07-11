@@ -199,7 +199,7 @@ label {
 
 .form-control {
   font-size: 1.3rem;
-  background-color: #fad2af;
+  background-color: #fddabb;
 }
 
 .btn {
@@ -212,6 +212,7 @@ label {
   padding: 0.2rem 1rem;
   border-radius: 0.5rem;
   border-color: #000;
+  margin-bottom: 3rem;
 }
 .btn:hover {
   background-color: #dee0ae;
